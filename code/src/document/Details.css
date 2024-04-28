@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.Details-page {
+  font-family: 'Open Sans', sans-serif;
+  color: #617D8A;
+  background-color: #FDFDFD;
+}
+
+.Details-page main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+.Details-page header {
+  margin-bottom: 20px;
+}
+
+.Details-page h2 {
+  text-align: center;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+}
+
+.Details-page form {
+  background: linear-gradient(180deg, rgba(255, 160, 122, 0.35) 0%, rgba(253, 253, 253, 0) 100%);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.Details-page form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+form input[type="text"],
+form select,
+form input[type="date"],
+form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form button {
+  width: 20%;
+  background-color: #87CEEB;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form button:hover {
+  background-color: #9ec2e6;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}

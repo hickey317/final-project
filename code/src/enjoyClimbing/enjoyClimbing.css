@@ -1,0 +1,156 @@
+/* 应用全局字体和背景 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+  }
+  
+  /* 修正默认的margin和padding */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 导航栏样式 */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #607D89;
+    color: white;
+  }
+  
+  nav h1 {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 搜索区域样式 */
+  .search-area {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .search-controls {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-controls input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  .search-controls button {
+    padding: 10px 20px;
+    background-color: #87CEEA;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .search-controls label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .search-controls input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* 内容区域样式 */
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .video-item {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .video-item img,
+  video {
+    
+    width: 45%;
+    height: 45%;
+    object-fit: contain;
+    background-color: black;
+  }
+  
+  .video-info-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+  }
+  
+  .video-text-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .video-title {
+    margin-bottom: 4px;
+  }
+  
+  .video-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .like-button,
+  .comment-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .like-button:hover,
+  .comment-button:hover {
+    opacity: 0.7;
+  }
+  
+  @media (max-width: 768px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .search-controls {
+      flex-direction: column;
+    }
+  
+    .search-controls input[type="text"],
+    .search-controls button,
+    .search-controls label {
+      margin: 5px 0;
+    }
+  }
+  
